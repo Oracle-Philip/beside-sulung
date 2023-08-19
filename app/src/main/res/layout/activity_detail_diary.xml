@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rummy.sulung.customview.CustomSulungNestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:background="@color/setting_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".view.ui.diary.Detail_Diary_Activity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/title_tool_bar_detail_diary" />
+
+        <LinearLayout
+            android:id="@+id/diary_detail_view"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="224dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/alcohol_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="34dp"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="화남 기분으로 칵테일을 마셨어요!"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/nanum_bareunhipi"
+                    android:textColor="@color/title_text_color" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/emptyDiary_chipGroup"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/writing_diary_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/btn"
+                        android:outlineProvider="none"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="40dp"
+                        android:textColor="@color/btn_text"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/pretendard_regular"
+                        android:includeFontPadding="false"
+                        android:text="@string/writing_diary_text2">
+                    </androidx.appcompat.widget.AppCompatButton>
+
+                    <LinearLayout
+                        android:id="@+id/detail_diary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/alcohol_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:text="음주량"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/pretendard_bold"
+                                android:textColor="@color/content_text_color" />
+
+                            <TextView
+                                android:id="@+id/drinkCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_marginStart="18dp"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/pretendard_regular"
+                                android:textColor="@color/title_text_color" />
+                            <TextView
+                                android:id="@+id/drinkUnit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/pretendard_regular"
+                                android:textColor="@color/title_text_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/alcohol_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="8dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:text="술이름"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/pretendard_bold"
+                                android:textColor="@color/content_text_color" />
+
+                            <TextView
+                                android:id="@+id/drinkName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_marginStart="18dp"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/pretendard_regular"
+                                android:textColor="@color/title_text_color" />
+                        </LinearLayout>
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:id="@+id/chipGroup"
+                            android:layout_marginTop="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:id="@+id/divider"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="28dp"
+                            android:layout_height="1dp"
+                            android:background="@color/horizontal_line"/>
+
+                        <TextView
+                            android:id="@+id/diaryContent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="오늘은 상술이 판을치는 11.11일 빼뺴로 데이다
+            여기저기서 빼뺴로를 주고 받는데
+            짜증이나서 나는 양주를 한병 깟다
+            너무 즐겁다"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/nanum_bareunhipi"
+                            android:textColor="@color/title_text_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <androidx.viewpager2.widget.ViewPager2
+                                android:id="@+id/viewPager"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+
+                            <LinearLayout
+                                android:id="@+id/indicatorLayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="56dp"
+                                android:layout_gravity="center_horizontal|bottom">
+                            </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.rummy.sulung.customview.CustomSulungNestedScrollView>

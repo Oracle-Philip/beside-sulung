@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rummy.sulung.view.MainActivity">
+    <item
+        android:id="@+id/filter"
+        android:orderInCategory="100"
+        android:title="@string/filter"
+        android:icon="@drawable/ic_filter_icon"
+        app:showAsAction="always" />
+</menu>

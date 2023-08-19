@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF000000</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_bg_color">#F8F7F3</color>
+
+    <!-- kakao login -->
+    <color name="kakao_login_bg">#FEE500</color>
+
+    <!-- diary add record -->
+    <color name="select_item_text_color">#343434</color>
+
+    <color name="green">#00FF00</color>
+
+    <color name="grey_400">#BDBDBD</color>
+
+    <color name="transparent">#00000000</color>
+
+    <!-- Sulung Color-->
+    <color name="grey">#999999</color>
+
+    <color name="chip">#F4E6E2</color>
+
+    <color name="login_bg">#F5F5F5</color>
+
+    <color name="disable_btn">#B9B9B9</color>
+
+    <color name="disable_input_filed">#B9B9B9</color>
+    <color name="enable_input_filed">#343434</color>
+
+    <color name="light_gray">#DDDDDD</color>
+
+    <!--write diary icon-->
+    <color name="plus_tint">#E0DACA</color>
+    <color name="minus_tint">#F1EFE8</color>
+
+    <!-- Chip -->
+    <color name="chip_background">#F8F7F3</color>
+    <color name="chip_stroke">#F8F7F3</color>
+    <color name="chip_close_icon_tint">#000000</color>
+
+    <!-- Filter -->
+    <color name="filter_item_selected">#343434</color>
+    <color name="filter_item_unselected">#5A5A5A</color>
+
+    <!-- InputBox Style -->
+    <color name="input_box_stroke">#D9D9D9</color>
+    <color name="input_box_stroke2">#E0DACA</color>
+    <color name="input_box_hint">#797979</color>
+    <color name="input_box_hint2">#E0DACA</color>
+    <color name="input_box_hint3">#FF2211</color>
+
+    <!-- Diary List CardView StrokeColor-->
+    <color name="diary_card_view_stroke_color">#E0DACA</color>
+
+    <!-- Detail Diary -->
+    <color name="horizontal_line">#E0DACA</color>
+    <color name="title_text_color">#343434</color>
+    <color name="content_text_color">#797979</color>
+
+    <color name="tooltip_line">#DDDDDD</color>
+
+    <color name="calm_primary">#AACC55</color>
+    <color name="calm_light">#EEF1E5</color>
+
+    <color name="gloom_primary">#A395CC</color>
+    <color name="gloom_light">#EDECF1</color>
+
+    <color name="angry_primary">#EA5830</color>
+    <color name="angry_light">#F4E6E2</color>
+
+    <color name="sad_primary">#89ABDE</color>
+    <color name="sad_light">#EBEEF3</color>
+
+    <color name="happy_primary">#FDC83C</color>
+    <color name="happy_light">#F6F1E3</color>
+
+    <color name="congratulate_primary">#F28FB3</color>
+    <color name="congratulate_light">#F5EBEF</color>
+
+    <color name="drunk_primary">#FA8E41</color>
+    <color name="drunk_light">#F6EBE3</color>
+
+    <!--FAB Color-->
+    <color name="fab_bg">#343434</color>
+
+    <!--Vertical Line-->
+    <color name="vertical_line">#F1EFE8</color>
+
+    <!--Dirary color-->
+    <color name="diary_date_color">#797979</color>
+    <color name="diary_content_color">#343434</color>
+
+    <!--Setting Color-->
+    <color name="setting_bg">#F8F7F3</color>
+    <color name="setting_catergory_bg">#F1EFE8</color>
+    <color name="setting_text_color">#343434</color>
+    <color name="setting_category_text_color">#797979</color>
+
+    <color name="setting_noti_green">#AACC55</color>
+    <color name="setting_noti_white">#FFFFFF</color>
+
+    <color name="setting_vertical_line">#F1EFE8</color>
+
+    <color name="setting_text">#5A5A5A</color>
+
+    <color name="logout_title">#343434</color>
+    <color name="logout_content">#5A5A5A</color>
+</resources>

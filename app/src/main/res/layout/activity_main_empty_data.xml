@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.EmptyDataMainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/recordAddMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="@dimen/fab_margin20"
+        app:background="@drawable/fab_drawable"
+        android:backgroundTint="@color/black"
+        app:maxImageSize="45dp"
+        app:tint="@null"
+        app:borderWidth="0dp"
+        app:backgroundTintMode="src_over"
+        app:srcCompat="@drawable/fab_record"
+        android:contentDescription="TODO" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

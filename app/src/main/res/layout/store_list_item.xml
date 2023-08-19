@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/store_view"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:background="@color/transparent"
+            android:gravity="center|bottom"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/drinkImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/angry" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/position"
+            android:text="123"
+            android:visibility="gone"
+            android:textColor="#ff0000"
+            android:layout_gravity="bottom|left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"/>
+        <TextView
+            android:id="@+id/id"
+            android:text="123"
+            android:visibility="gone"
+            android:layout_gravity="bottom|right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"/>
+    </FrameLayout>
+</layout>

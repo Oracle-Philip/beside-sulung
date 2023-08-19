@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_tool_bar_setting"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/setting_bg"
+    android:elevation="0dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:textColor="#343434"
+            android:letterSpacing="-0.06"
+            android:text="반가워요 "
+            android:fontFamily="@font/nanum_bareunhipi"
+            android:layout_marginTop="16dp"
+            android:includeFontPadding="false"
+            android:layout_gravity="start" />
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:textColor="#343434"
+            android:fontFamily="@font/nanum_bareunhipi"
+            android:layout_marginTop="16dp"
+            android:includeFontPadding="false"
+            android:layout_gravity="start" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:textColor="#343434"
+            android:text="님"
+            android:fontFamily="@font/nanum_bareunhipi"
+            android:layout_marginTop="16dp"
+            android:includeFontPadding="false"
+            android:layout_gravity="start" />
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,20 @@
+{
+  "viewItems": [
+    {
+      "viewType": "all_agree",
+      "viewObject": "전체 동의하기"
+    },
+    {
+      "viewType": "line",
+      "viewObject": ""
+    },
+    {
+      "viewType": "agree1",
+      "viewObject": "[필수] 서비스 이용약관"
+    },
+    {
+      "viewType": "agree2",
+      "viewObject": "[필수] 개인정보 수집 및 이용"
+    }
+  ]
+}

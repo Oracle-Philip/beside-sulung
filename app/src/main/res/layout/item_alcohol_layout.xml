@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/alcohol_item_layout"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/alcohol_selected_bg"
+    android:layout_width="102dp"
+    android:layout_height="116dp">
+    <ImageView
+        android:id="@+id/alcohol_img"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sel_cocktail"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/alcohol_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:textColor="@color/select_item_text_color"
+        android:layout_gravity="center"
+        android:fontFamily="@font/pretendard_bold"
+        android:textSize="15sp"
+        android:text="칵테일"
+        android:includeFontPadding="false"/>
+    <ImageView
+        android:id="@+id/alcohol_check"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/_check"/>
+    </LinearLayout>
+</LinearLayout>

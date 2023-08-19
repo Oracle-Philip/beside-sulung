@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="fab_margin">48dp</dimen>
+    <dimen name="item_spacing">4dp</dimen>
+    <dimen name="filter_item_spacing">8dp</dimen>
+    <dimen name="item_store_top_bottom_spacing">8dp</dimen>
+    <dimen name="item_store_left_right_spacing">4dp</dimen>
+    <dimen name="store_list_divider_item_offset">32dp</dimen>
+
+    <dimen name="margin_16dp">16dp</dimen>
+
+    <!-- diary offset -->
+    <dimen name="date_separater_diary_offset">16dp</dimen>
+</resources>

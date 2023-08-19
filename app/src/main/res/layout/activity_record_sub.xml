@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="40dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.terms.TermsOfPersonalInfoActivity"
+    tools:ignore="ScrollViewCount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pretendard_bold"
+            android:layout_marginStart="20dp"
+            android:textColor="#343434"
+            android:textSize="12sp"
+            android:includeFontPadding="false"
+            android:layout_marginTop="32dp"
+            android:text="@string/record_title1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/select_date"
+            style="@style/Widget.App.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:endIconCheckable="true"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_inputtext_calendar"
+            app:endIconTint="@color/fab_bg"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dateInput"
+                hideKeyboardOnInputDone="@{true}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#343434"
+                android:enabled="false"
+                android:fontFamily="@font/pretendard_regular"
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:textAppearance="?attr/textAppearanceBody1"
+                android:textSize="15sp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pretendard_bold"
+            android:layout_marginStart="20dp"
+            android:textColor="#343434"
+            android:textSize="12sp"
+            android:includeFontPadding="false"
+            android:layout_marginTop="32dp"
+            android:text="@string/record_title2" />
+
+        <GridLayout
+            android:id="@+id/drink_type_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:columnCount="3"
+            android:useDefaultMargins="true">
+
+            <ImageView
+                android:id="@+id/drink_type_soju"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_record_drinktype_soju" />
+
+            <ImageView
+                android:id="@+id/drink_type_beer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_record_drinktype_beer" />
+
+            <ImageView
+                android:id="@+id/drink_type_makgeolli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_record_drinktype_makgeolli" />
+
+            <ImageView
+                android:id="@+id/drink_type_cocktail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_record_drinktype_cocktail" />
+
+            <ImageView
+                android:id="@+id/drink_type_sake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_record_drinktype_sake" />
+
+            <ImageView
+                android:id="@+id/drink_type_highball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_record_drinktype_highball" />
+
+            <ImageView
+                android:id="@+id/drink_type_champagne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_record_drinktype_champagne" />
+
+            <ImageView
+                android:id="@+id/drink_type_liquor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_record_drinktype_liquor" />
+
+            <ImageView
+                android:id="@+id/drink_type_wine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_record_drinktype_wine" />
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/pretendard_bold"
+            android:textColor="#343434"
+            android:textSize="12sp"
+            android:includeFontPadding="false"
+            android:layout_marginTop="32dp"
+            android:text="@string/record_title3" />
+
+        <GridLayout
+            android:id="@+id/emotion_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:columnCount="3"
+            android:useDefaultMargins="true">
+
+            <ImageView
+                android:id="@+id/emotion_tranquility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_record_emotion_tranquility" />
+
+            <ImageView
+                android:id="@+id/emotion_depressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_record_emotion_depressed" />
+
+            <ImageView
+                android:id="@+id/emotion_aggro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_record_emotion_aggro" />
+
+            <ImageView
+                android:id="@+id/emotion_sadness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_record_emotion_sadness" />
+
+            <ImageView
+                android:id="@+id/emotion_pleasure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_record_emotion_pleasure" />
+
+            <ImageView
+                android:id="@+id/emotion_contrats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_record_emotion_contrats" />
+
+            <ImageView
+                android:id="@+id/emotion_intoxication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_record_emotion_intoxication" />
+        </GridLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/regEasily_btn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:outlineProvider="none"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="45dp"
+            android:layout_gravity="end"
+            android:text="@string/record_btn"
+            android:textSize="16sp"
+            android:background="@drawable/btn"
+            android:textColor="@color/btn_text"
+            android:fontFamily="@font/pretendard_regular"
+            android:includeFontPadding="false" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

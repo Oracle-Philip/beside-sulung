@@ -1,0 +1,70 @@
+package com.rummy.sulung.viewmodel
+
+import android.util.Log
+import androidx.databinding.InverseMethod
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import com.rummy.sulung.common.App.Companion.TAG
+
+class TermsViewModel : ObservableViewModel() {
+
+    val _termsOfservice = MutableLiveData(false)
+    val _termsOfpersonal = MutableLiveData(false)
+    val _termsallAgree = MutableLiveData(false)
+    val termsallAgree : LiveData<Boolean>
+        get() = _termsallAgree
+//    lateinit var termsallAgree : LiveData<Boolean>
+//
+//    init {
+//        termsallAgree = _termsOfservice && _termsOfpersonal
+//    }
+
+    //    fun getTermsOfService() : Boolean = _termsOfservice.value!!
+    fun getTermsOfService() : MutableLiveData<Boolean> = _termsallAgree
+
+    fun setTermsOfService(check: MutableLiveData<Boolean>){
+        Log.e(TAG, "setTermsOfService ${check.value}")
+        _termsOfservice.value = check.value
+        //_termsallAgree.value = (_termsOfservice.value!! && _termsOfpersonal.value!!)
+    }
+
+    //    fun getTermsOfPersonal() : Boolean = _termsOfpersonal.value!!
+    fun getTermsOfPersonal() : MutableLiveData<Boolean> = _termsallAgree
+
+    fun setTermsOfPersonal(check: MutableLiveData<Boolean>){
+        Log.e(TAG, "setTermsOfService")
+        Log.e(TAG, "setTermsOfService ${check.value}")
+        _termsOfpersonal.value = check.value
+        //_termsallAgree.value = (_termsOfpersonal.value!! && _termsOfservice.value!! )
+    }
+
+
+    //fun getAllAgree() : Boolean = termsallAgree.value!!
+    fun getAllAgree2() : Boolean = _termsallAgree.value!!
+    fun getAllAgree() : MutableLiveData<Boolean> = _termsallAgree
+
+    //    @InverseMethod(value = "getAllAgree")
+    fun setAllAgree(check : MutableLiveData<Boolean>) {
+        Log.e(TAG, check.value.toString())
+        _termsOfservice.value = check.value
+        _termsOfpersonal.value = check.value
+//        _termsallAgree.value = (_termsOfservice.value!! && _termsOfpersonal.value!!)
+        _termsallAgree.value = check.value
+    }
+
+    fun issAllAgree() : MutableLiveData<Boolean> = with(termsallAgree){
+//        Log.e(TAG, "${_termsOfpersonal.value!! && _termsOfservice.value!!}")
+//        Log.e(TAG, "_termsOfpersonal ${_termsOfpersonal.value!!}")
+//        Log.e(TAG, "_termsOfservice ${_termsOfservice.value!!}")
+        _termsallAgree.value = (_termsOfpersonal.value!! && _termsOfservice.value!!)
+        _termsallAgree
+    }
+
+    fun isAgree() : Boolean = with(_termsOfpersonal.value!! && _termsOfservice.value!!){
+        Log.e(TAG, "${_termsOfpersonal.value!! && _termsOfservice.value!!}")
+        Log.e(TAG, "_termsOfpersonal ${_termsOfpersonal.value!!}")
+        Log.e(TAG, "_termsOfservice ${_termsOfservice.value!!}")
+        (_termsOfpersonal.value!! && _termsOfservice.value!!)
+    }
+}
