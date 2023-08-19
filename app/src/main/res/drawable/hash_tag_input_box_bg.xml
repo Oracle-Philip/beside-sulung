@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shape를 아래 층에 둡니다 -->
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <size android:height="28dp" />
+            <corners android:radius="4dp" />
+            <stroke android:color="#000000" android:width="1dp" />
+        </shape>
+    </item>
+
+    <!-- 이미지를 위 층에 둡니다 -->
+    <item android:drawable="@drawable/ic_sharp"
+        android:width="9dp"
+        android:height="11dp"
+        android:left="7dp"
+        android:top="7dp"
+        android:bottom="7dp"
+        android:right="4dp"
+        android:gravity="center_vertical">
+    </item>
+</layer-list>
+    <!--
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@android:color/transparent" />
+        <corners android:radius="4dp" />
+        <size android:height="28dp" />
+        <stroke
+            android:width="1dp"
+            android:color="#000000" />
+    </shape>-->

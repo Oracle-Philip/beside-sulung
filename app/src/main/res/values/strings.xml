@@ -1,0 +1,156 @@
+<resources>
+    <!-- kakao key-->
+    <string name="native_app_key">7204ef930b35206e9bbb79bb47b7d4d0</string>
+
+    <!-- sulung-->
+    <string name="app_name">술렁술렁</string>
+    <string name="message1">아래 약관에 동의하고\n술렁술렁을 바로 시작해봐요!</string>
+
+    <string name="all_agree">전체 동의하기</string>
+
+    <string name="terms_of_service_header">‘술렁술렁’ 서비스 이용 약관</string>
+    <string name="terms_of_personal_info_header">‘술렁술렁’ 개인정보처리방침</string>
+    <string name="check_terms_of_service">[필수] 서비스 이용약관</string>
+    <string name="check_terms_of_personal_info">[필수] 개인정보 수집 및 이용</string>
+
+    <string name="next">다음</string>
+    <string name="next2">완료</string>
+
+    <string name="nickname_welcome">반가워요 😀</string>
+    <string name="nickname_welcome_info1">앱에서 사용할 닉네임을 입력해주세요.</string>
+    <string name="nickname_welcome_inputTextField_hint">닉네임 (최대 7자까지 가능)</string>
+    <string name="nickname_input_error_empty">닉네임을 입력해주세요.</string>
+    <string name="nickname_input_error">한글, 영어로 최소 2자에서 최대 7자까지 입력 가능합니다.</string>
+
+    <!-- 회원틸퇴 -->
+    <string name="withdrawal">회원탈퇴</string>
+    <string name="withdrawal_info_title">탈퇴 시 주의사항</string>
+    <string name="withdrawal_info_content">∙ 회원 정보가 모두 삭제되어 복구할 수 없어요\n∙ 백업하지 않았다면 소중한 글, 사진이 모두 삭제 돼요\n∙ 다음에 술을 마실 땐 기록할 곳이 없어져요</string>
+    <string name="withdrawal_checkbox_confirm">위 내용을 모두 숙지하였으며, 동의합니다.</string>
+    <string name="withdrawal_reason_title">술렁술렁을 탈퇴하려는 이유가 궁금해요</string>
+    <string name="withdrawal_reason_content">술렁술렁을 떠나는 이유를 자세히 알려주세요.\n소중한 의견을 반영하여 더 나은 서비스로\n꼭 찾아뵐게요.</string>
+    <string name="withdrawal_btn">탈퇴하기</string>
+    <string name="not_withdrawal_btn">계속 이용하기</string>
+
+    <!--main-->
+    <string name="main_title1">소중한 사람들과의 시간\n오래 간직해두고 싶은가요?</string>
+    <string name="main_title2">그날의 감정과 술로\n추억을 저장해두세요</string>
+    <string name="main_title3">순간의 기억을\n술렁술렁과 함께 남겨봐요!</string>
+    <string name="main_btn_text">첫 기록하러 가기</string>
+
+    <string name="test_title">기록 하기</string>
+    <string name="test_info">쨘 -\n술창고에 나의 기록이 쌓였어요</string>
+    <string name="test_15_year_1">상세한 그날을 기록하기</string>
+    <string name="test_15_year_2">술창고 보러가기 ></string>
+
+    <string name="congratulations1">축하해요!</string>
+    <string name="congratulations2">술창고에 첫 번째\n술렁술렁 기억이 저장되었어요!</string>
+    <string name="back_button_pop_up">\'뒤로\' 버튼을 한번 더 누르시면 종료 됩니다.</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <string name="title_activity_replace_main">ReplaceMain</string>
+    <string name="title_home">술일기</string>
+    <string name="title_dashboard">술창고</string>
+    <string name="title_notifications">설정</string>
+    <string name="filter">filter</string>
+    <string name="filter_dtl">상세 필터</string>
+    <string name="alchohol">ALCOHOL</string>
+    <string name="feeling">FEELING</string>
+    <string name="reset">초기화</string>
+    <string name="adjust">필터 적용</string>
+    <string name="record_title1">이날을 기록하고 싶어요!</string>
+    <string name="record_title2">어떤 술과 함께하나요?</string>
+    <string name="record_title3">기분을 알려주세요!</string>
+    <string name="exit_icon">exit_icon</string>
+    <string name="record_toolbar_title">기록하기</string>
+    <string name="record_btn">기억하기</string>
+    <string name="writing_diary_text1">술렁술렁\n술창고에 나의 이야기가 담겼어요!</string>
+    <string name="writing_diary_text2">술 일기 쓰기</string>
+    <string name="writing_diary_text3">다시 기록하기</string>
+    <string name="alchol_store">술창고 보러가기 ></string>
+    <string name="writing_diary_text11">2022년 11월 11일\n평온 기분으로 와인을 마셨어요!</string>
+    <string name="writing_diary_text12">술 이름을 기록해봐요!</string>
+    <string name="writing_diary_text13">술 이름이 기억나지 않아요</string>
+    <string name="writing_diary_text14">얼마나 마셨나요?</string>
+    <string name="writing_diary_text15">해시태그로 이 순간을 기억해요</string>
+    <string name="tag_hint">태그 입력</string>
+
+    <string name="writing_diary_text16">술 이름을 기록해주세요</string>
+
+    <string-array name="emotion_array">
+        <item>기쁨</item>
+        <item>슬픔</item>
+        <item>우울</item>
+        <item>화남</item>
+        <item>평온</item>
+        <item>축하</item>
+        <item>취함</item>
+    </string-array>
+
+    <string-array name="drink_array">
+        <item>소주를</item>
+        <item>맥주를</item>
+        <item>막걸리를</item>
+        <item>양주를</item>
+        <item>칵테일을</item>
+        <item>와인을</item>
+        <item>사케를</item>
+        <item>샴페인을</item>
+        <item>하이볼을</item>
+    </string-array>
+
+    <string-array name="drink_array_tag">
+        <item>소주</item>
+        <item>맥주</item>
+        <item>막걸리</item>
+        <item>양주</item>
+        <item>칵테일</item>
+        <item>와인</item>
+        <item>사케</item>
+        <item>샴페인</item>
+        <item>하이볼</item>
+    </string-array>
+
+    <string name="editing_diary_text1">일기수정</string>
+    <string name="editing_diary_text2">어떤 술과 함께하나요?</string>
+    <string name="editing_diary_text3">기분을 알려주세요!</string>
+    <string name="editing_diary_text4">상세한 기록</string>
+    <string name="editing_diary_text5">기억하기</string>
+
+    <string-array name="theme_names">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
+
+    <string-array name="example_list_preference_entries">
+        <item>선택지 1</item>
+        <item>선택지 2</item>
+        <item>선택지 3</item>
+    </string-array>
+    <string-array name="example_list_preference_values">
+        <item>option1</item>
+        <item>option2</item>
+        <item>option3</item>
+    </string-array>
+    <string name="example_list_preference_default_value">option1</string>
+
+    <string-array name="example_multiselect_list_preference_entries">
+        <item>다중 선택지 1</item>
+        <item>다중 선택지 2</item>
+        <item>다중 선택지 3</item>
+    </string-array>
+
+    <string-array name="example_multiselect_list_preference_values">
+        <item>value1</item>
+        <item>value2</item>
+        <item>value3</item>
+    </string-array>
+
+</resources>

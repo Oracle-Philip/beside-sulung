@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/setting_bg"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/title_tool_bar_record" />
+
+    <include
+        android:id="@+id/record_sub"
+        layout="@layout/activity_record_sub_replace" />
+</LinearLayout>

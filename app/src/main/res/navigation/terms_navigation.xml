@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_terms">
+
+    <fragment
+        android:id="@+id/navigation_terms"
+        android:name="com.rummy.sulung.view.terms.TermsOfFragment1"
+        tools:layout="@layout/fragment_terms_of_fragment1" >
+        <action
+            android:id="@+id/action_navigation_terms_to_navigation_nickname"
+            app:destination="@id/navigation_nickname" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_nickname"
+        android:name="com.rummy.sulung.view.nickname.NicknameOfFragment2"
+        tools:layout="@layout/fragment_nickname_input_fragment" >
+        <action
+            android:id="@+id/action_navigation_nickname_to_navigation_terms"
+            app:destination="@id/navigation_terms" />
+    </fragment>
+</navigation>

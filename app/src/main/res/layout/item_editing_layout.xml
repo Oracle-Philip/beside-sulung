@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_item_layout"
+    android:layout_width="102dp"
+    android:layout_height="32dp"
+    android:background="@drawable/alcohol_selected_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/pretendard_bold"
+        android:includeFontPadding="false"
+        android:text="칵테일"
+        android:textColor="@color/select_item_text_color"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.EmptyDataMainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_bareunhipi"
+            android:textColor="#343434"
+            android:textSize="32sp"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="98dp"
+            android:text="@string/main_title1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/home_img_1" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/down_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_bareunhipi"
+            android:textColor="#343434"
+            android:textSize="32sp"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="162dp"
+            android:text="@string/main_title2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/home_img2" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/add_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/fab_record"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/down_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_bareunhipi"
+            android:textColor="#343434"
+            android:textSize="32sp"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="162dp"
+            android:text="@string/main_title3" />
+
+        <FrameLayout
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="35dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ellipse_171" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/home_img3" />
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/main_btn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="20dp"
+            android:outlineProvider="none"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="end"
+            android:text="@string/main_btn_text"
+            android:textSize="16sp"
+            android:background="@drawable/btn"
+            android:textColor="@color/btn_text"
+            android:fontFamily="@font/pretendard_regular"
+            android:includeFontPadding="false" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

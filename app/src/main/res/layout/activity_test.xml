@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 사진 촬영 버튼 -->
+    <Button
+        android:id="@+id/take_photo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="사진 찍기" />
+
+    <!-- 이미지 크롭 버튼 -->
+    <Button
+        android:id="@+id/crop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crop"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true" />
+
+    <!-- 카메라 미리보기를 위한 SurfaceView -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/view_finder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/croppedImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </androidx.camera.view.PreviewView>
+
+    <!-- 크롭된 이미지를 보여주기 위한 ImageView -->
+
+    <!-- 이미지 크롭 영역을 나타내는 View -->
+    <View
+        android:id="@+id/cropView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/crop_border"
+        android:alpha="0.5"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:tag="crop"
+        android:padding="1dp" />
+
+</RelativeLayout>

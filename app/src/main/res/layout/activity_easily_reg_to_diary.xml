@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity"
+    android:orientation="vertical"
+    android:background="@color/setting_bg"
+    android:weightSum="1">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/title_tool_bar_record" />
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="48dp"
+        android:textSize="28sp"
+        android:text="@string/writing_diary_text1"
+        android:textColor="#343434"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nanum_bareunhipi"
+        android:includeFontPadding="false" />
+
+    <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/drinktypeAndEmotion"
+            android:layout_marginTop="34dp"
+            android:layout_width="156dp"
+            android:layout_height="260dp"
+            android:layout_gravity="center" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="48dp"
+        android:orientation="vertical"
+        android:layout_gravity="center|end" >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/writingDiaryBtn"
+            android:layout_width="match_parent"
+            android:outlineProvider="none"
+            android:layout_height="56dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/black_btn"
+            android:fontFamily="@font/pretendard_medium"
+            android:includeFontPadding="false"
+            android:text="@string/writing_diary_text2"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/alcohol_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/pretendard_regular"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.02"
+            android:text="@string/alchol_store"
+            android:textColor="#797979"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

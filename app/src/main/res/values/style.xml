@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PreferenceCategoryStyle1" parent="Preference.Category">
+        <item name="android:layout">@layout/preference_category_material</item>
+        <item name="android:background">@color/green</item>
+        <!-- 다른 속성 추가 가능 -->
+    </style>
+
+    <style name="MyPreferenceCategoryStyle">
+        <item name="android:layout">@layout/my_preference_category_layout</item>
+        <item name="android:background">@color/green</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="PreferenceCategoryStyle" parent="Preference">
+        <item name="android:layout">@layout/my_preference_category_layout</item>
+        <item name="android:background">@drawable/preference_category_background</item>
+    </style>
+
+    <style name="SpinnerTextStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/pretendard_medium</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Widget.App.Chip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipBackgroundColor">@color/chip_background</item>
+        <item name="chipStrokeColor">@color/chip_stroke</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="chipCornerRadius">8dp</item>
+        <item name="chipMinHeight">28dp</item>
+    </style>
+
+    <style name="FullScreenImage" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- other attributes -->
+        <item name="android:windowBackground">#000000</item>
+    </style>
+
+    <style name="NoAnimationSpinnerStyle" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:overlapAnchor">true</item>
+        <item name="android:dropDownVerticalOffset">-4dp</item>
+        <item name="android:popupAnimationStyle">@null</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#007AFF</item> <!-- 버튼 색상 -->
+        <item name="android:background">#FFFFFF</item> <!-- 배경 색상 -->
+    </style>
+
+</resources>

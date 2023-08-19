@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="서비스 설정"
+        android:layout="@layout/item_setting_catergory">
+    <SwitchPreferenceCompat
+        android:layout="@layout/item_setting_noti_compat"
+        android:defaultValue="false"
+        android:key="example_switch_preference" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="서비스 정책 및 문의"
+        android:layout="@layout/item_setting_catergory2">
+        <Preference
+            android:layout="@layout/item_setting_compat"/>
+        <Preference
+            android:layout="@layout/item_setting_compat2"/>
+        <Preference
+            android:layout="@layout/item_setting_compat3"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="계정 설정 및 데이터 관리"
+        android:layout="@layout/item_setting_catergory3">
+    <Preference
+        android:layout="@layout/item_setting_compat4"/>
+    <Preference
+        android:layout="@layout/item_setting_compat5"/>
+    </PreferenceCategory>
+</PreferenceScreen>

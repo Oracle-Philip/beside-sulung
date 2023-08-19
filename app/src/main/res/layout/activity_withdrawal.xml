@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/title_tool_bar" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/user_name"
+            android:text="김수진"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textColor="@color/setting_text_color"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/nanum_bareunhipi"/>
+        <TextView
+            android:text=" 고객님, 정말 탈퇴하실 건가요?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textColor="@color/setting_text_color"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/nanum_bareunhipi"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_rounded_border">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:textSize="14sp"
+            android:textColor="@color/setting_text_color"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/pretendard_bold"
+            android:text="@string/withdrawal_info_title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="14sp"
+            android:textColor="@color/setting_text_color"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/pretendard_regular"
+            android:text="@string/withdrawal_info_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/withdrawal_check_box"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:button="@null"
+            android:background="@drawable/custom_checkbox" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="15sp"
+            android:text="@string/withdrawal_checkbox_confirm"
+            android:textColor="#343434"
+            android:lineSpacingExtra="1sp"
+            android:fontFamily="@font/pretendard_bold"
+            android:includeFontPadding="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:text="술렁술렁을 탈퇴하려는 이유가 궁금해요"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/setting_text_color"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/nanum_bareunhipi"/>
+
+        <EditText
+            android:id="@+id/withdrawal_reason_input"
+            android:background="@drawable/bg_rounded_border"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/withdrawal_reason_content"
+            android:fontFamily="@font/pretendard_regular"
+            android:includeFontPadding="false"
+            android:inputType="textPersonName"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:gravity="top"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textSize="15sp">
+        </EditText>
+<!--        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/withdrawal_layout"
+            style="@style/Widget.App.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/withdrawal_reason_input"
+                    android:background="@drawable/bg_rounded_border"
+                    hideKeyboardOnInputDone="@{true}"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:hint="@string/withdrawal_reason_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:includeFontPadding="false"
+                    android:inputType="textPersonName"
+                    android:paddingStart="12dp"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textSize="15sp">
+                </com.google.android.material.textfield.TextInputEditText>
+            </androidx.core.widget.NestedScrollView>
+        </com.google.android.material.textfield.TextInputLayout>-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/withdrawal_btn"
+            android:layout_width="106dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="3"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:background="@drawable/bg_rounded_border4"
+            android:fontFamily="@font/pretendard_medium"
+            android:includeFontPadding="false"
+            android:text="@string/withdrawal_btn"
+            android:textColor="@color/logout_title"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/not_withdrawal_btn"
+            android:layout_width="146dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_weight="5"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:background="@drawable/btn"
+            android:fontFamily="@font/pretendard_medium"
+            android:includeFontPadding="false"
+            android:text="@string/not_withdrawal_btn"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+<!-- android:outlineProvider="none"으로 그림자 제거 QA0508 -->

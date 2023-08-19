@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tooltipView"
+    android:layout_width="110dp"
+    android:layout_height="96dp"
+    android:background="@drawable/bg_rounded_tooltip"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/modifyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/pretendard_regular"
+        android:includeFontPadding="false"
+        android:text="수정"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/tooltip_line"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:id="@+id/deleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/pretendard_regular"
+        android:includeFontPadding="false"
+        android:text="삭제"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:gravity="center" />
+</LinearLayout>

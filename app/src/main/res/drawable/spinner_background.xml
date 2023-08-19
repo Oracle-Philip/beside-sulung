@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/setting_bg" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/spinner_down_icon" android:gravity="right|center_vertical" />
+        </layer-list>
+    </item>
+</selector>
