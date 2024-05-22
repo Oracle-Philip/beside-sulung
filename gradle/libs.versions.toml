@@ -1,0 +1,86 @@
+[versions]
+agp = "8.5.0-beta02"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+lifecycleRuntimeKtx = "2.8.0"
+activityCompose = "1.9.0"
+composeBom = "2023.08.00"
+
+camera_core = '1.1.0-alpha10'
+camera_camera2 = '1.1.0-alpha10'
+camera_lifecycle = '1.1.0-alpha10'
+camera_view = '1.0.0-alpha27'
+android_google_play_core = '1.8.1'
+
+retrofit = '2.6.0'
+retrofit_converter_scalars = '2.9.0'
+moshi = '2.9.0'
+okhttp = '3.8.0'
+okhttp_logging_interceptor = '5.0.0-alpha.2'
+
+photo_view = '2.3.0'
+
+lottie = '5.2.0'
+
+glide = '4.13.0'
+glide_transformations = '4.3.0'
+glide_compiler = '4.13.0'
+
+kakao_sdk = '2.11.2'
+hilt = '2.49'
+appcompat = "1.6.1"
+material = "1.12.0"
+jetbrainsKotlinJvm = "1.9.0"
+
+org-jetbrains-kotlin-android = "1.5.0"
+material3Android = "1.2.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version = "kotlinx-serialization-json"}
+
+hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+hilt-navigation-compose = { group = "androidx.hilt" , name = "hilt-navigation-compose", version = "1.0.0"}
+
+camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "camera_core" }
+camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "camera_camera2" }
+camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "camera_lifecycle" }
+camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "camera_view" }
+android-google-play-core = { group = "com.google.android.play", name = "core", version.ref = "android_google_play_core" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-converter-scalars = { group = "com.squareup.retrofit2",name = "converter-scalars", version.ref = "retrofit_converter_scalars" }
+moshi = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshi" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp_logging_interceptor" }
+photo-view = { group = "com.github.chrisbanes", name = "PhotoView", version.ref = "photo_view" }
+lottie = { group = "com.airbnb.android", name = "lottie", version.ref = "lottie" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+glide-transformations = { group = "jp.wasabeef", name = "glide-transformations", version.ref = "glide_transformations" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-material3-android = { group = "androidx.compose.material3", name = "material3-android", version.ref = "material3Android" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "org-jetbrains-kotlin-android" }
